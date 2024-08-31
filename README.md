@@ -2,14 +2,32 @@
 
 Este repositório contém a implementação e comparação dos algoritmos de substituição de páginas FIFO, LRU e Ótimo. O projeto faz parte da disciplina de Sistemas Operacionais (MATA58) na Universidade Federal da Bahia (UFBA) no semestre 2024.1, ministrada pelo Prof. Robespierre Dantas da Rocha Pita. 🖥️🔄
 
+### Algoritmo Ótimo 🎯
+
+O algoritmo Ótimo é um método teórico que substitui a página que será usada mais tarde no futuro. Apesar de ser impraticável na vida real devido à necessidade de prever o futuro, ele é fundamental para entender o limite superior do desempenho dos algoritmos de substituição de páginas. Ao comparar o Ótimo com FIFO e LRU, podemos avaliar o quão longe os algoritmos práticos estão em relação ao desempenho ideal.
+
+![Algoritmo Ótimo](assets/algoritmo-otimo.gif)
+*Este GIF mostra o funcionamento do algoritmo Ótimo. O algoritmo Ótimo substitui a página que será usada mais tarde no futuro, servindo como uma referência ideal para o desempenho dos algoritmos.*
+
+![Comparação entre Algoritmos](assets/comparativo-substituicao.gif)
+*Este GIF compara o desempenho do algoritmo Ótimo com os algoritmos FIFO e LRU com as mesmas páginas. Ele ilustra como cada algoritmo lida com a substituição de páginas ao longo do tempo, note que o número de page faults é sempre menor no algoritmo ótimo.*
+
+### Comparação de Algoritmos 🔄
+
+- **FIFO (First In, First Out)**: Substitui a página que está na memória há mais tempo, independentemente de sua utilização recente.
+- **LRU (Least Recently Used)**: Substitui a página que não foi usada há mais tempo, com base no histórico recente de acessos.
+- **Ótimo**: Substitui a página que será usada mais tarde no futuro, servindo como uma referência para o desempenho ideal.
+
 ## 📂 Estrutura do Projeto
 
-- **`algorithms/base.py`**: Classe base para todos os algoritmos de substituição de páginas. Define a estrutura e os métodos comuns. 🏗️
-- **`algorithms/fifo.py`**: Implementação do algoritmo FIFO (First In, First Out), que substitui a página mais antiga na memória. ⏳
-- **`algorithms/lru.py`**: Implementação do algoritmo LRU (Least Recently Used), que substitui a página que não foi usada há mais tempo. 🔄
-- **`algorithms/optimal.py`**: Implementação do algoritmo Ótimo, que substitui a página que será usada mais tarde no futuro. 🎯
-- **`main.py`**: Script principal para executar os algoritmos e comparar seu desempenho com diferentes conjuntos de dados. 🏃‍♂️
-- **`.gitignore`**: Arquivo de configuração para ignorar arquivos desnecessários e caches. 🚫
+- **`algorithms/`**: Pasta contendo as implementações dos algoritmos de substituição de páginas.
+  - **`base.py`**: Classe base para todos os algoritmos de substituição de páginas, definindo a estrutura e métodos comuns. 🏗️
+  - **`fifo.py`**: Implementação do algoritmo FIFO (First In, First Out). ⏳
+  - **`lru.py`**: Implementação do algoritmo LRU (Least Recently Used). 🔄
+  - **`optimal.py`**: Implementação do algoritmo Ótimo. 🎯
+
+- **`main.py`**: Script principal que executa os algoritmos de substituição de páginas e compara seu desempenho utilizando diferentes conjuntos de dados. Este arquivo inicializa os algoritmos, executa simulações e exibe os resultados das comparações. 🏃‍♂️
+
 
 ## 🚀 Como Executar
 

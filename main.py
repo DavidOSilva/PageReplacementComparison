@@ -28,7 +28,6 @@ def compare(pages, capacity):
 
 if __name__ == "__main__":
     pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 0, 1, 7, 0, 1]
-    # pages = [7, 0, 1, 2, 0, 3, 0, 4, 1, 3]
     capacity = 3
     #runOptimal(pages, capacity)
     compare(pages, capacity)
