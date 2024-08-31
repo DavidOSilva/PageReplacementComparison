@@ -1,0 +1,27 @@
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de cache do Jupyter
+.ipynb_checkpoints/
+
+# Arquivos de cache do VSCode
+.vscode/
+
+# Arquivos de cache do PyCharm
+.idea/
+
+# Arquivos de cache do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários e de backup
+*.swp
+*.swo
+*.swn
+
+# Diretórios de ambiente virtual
+venv/
+env/
