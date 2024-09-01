@@ -1,8 +1,8 @@
 from .base import *
 
 class LRU(IPageReplacement):
-    def __init__(self, capacity):
-        super().__init__(capacity)
+    def __init__(self, capacity, verbose=False):
+        super().__init__(capacity, verbose)
         self.pageIndices = {}  # Para rastrear o índice mais recente de uso das páginas
 
     def findReplacementIndex(self, pages, idx):

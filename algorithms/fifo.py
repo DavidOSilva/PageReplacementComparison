@@ -2,8 +2,8 @@ from .base import *
 from collections import deque
 
 class FIFO(IPageReplacement):
-    def __init__(self, capacity):
-        super().__init__(capacity)
+    def __init__(self, capacity, verbose=False):
+        super().__init__(capacity, verbose)
         self.queue = deque()  # Para rastrear a ordem de chegada das páginas
 
     def findReplacementIndex(self, pages, idx):
