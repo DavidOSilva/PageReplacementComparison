@@ -2,6 +2,12 @@
 
 Este repositório contém a implementação e comparação dos algoritmos de substituição de páginas FIFO, LRU e Ótimo. O projeto faz parte da disciplina de Sistemas Operacionais (MATA58) na Universidade Federal da Bahia (UFBA) no semestre 2024.1, ministrada pelo Prof. Robespierre Dantas da Rocha Pita. 🖥️🔄
 
+## 📽️ Apresentação do Projeto
+Confira a apresentação do projeto em vídeo abaixo:
+[![Assistir Apresentação](assets/thumbnail.png)](https://drive.google.com/file/d/1WmQKQ1Kbe-uf2ERU9FgcMYwJ8YAd4C0Y/view?usp=sharing)
+
+Este vídeo fornece uma visão geral detalhada dos objetivos do projeto. É uma ótima maneira de entender o que estamos tentando alcançar e como você pode se envolver. Se você tiver algum problema para assistir ao vídeo ou precisar de mais informações, não hesite em entrar em contato!
+
 ### Algoritmo Ótimo 🎯
 
 O algoritmo Ótimo é um método teórico que substitui a página que será usada mais tarde no futuro. Apesar de ser impraticável na vida real devido à necessidade de prever o futuro, ele é fundamental para entender o limite superior do desempenho dos algoritmos de substituição de páginas. Ao comparar o Ótimo com FIFO e LRU, podemos avaliar o quão longe os algoritmos práticos estão em relação ao desempenho ideal.
